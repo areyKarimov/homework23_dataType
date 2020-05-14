@@ -1,0 +1,7 @@
+mixin navLi(name, active) 
+    if(active)
+        li.nav__link.active
+            button=name
+    else
+        li.nav__link
+            button=name

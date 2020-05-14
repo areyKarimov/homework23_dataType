@@ -1,0 +1,13 @@
+.wrapper__inner
+    .wrapper__header
+        h2.wrapper__title.wrapper__title--tab 
+            span Noname
+            |, choose one of currencies, and translate your USD in one of them.
+    p.wrapper__explaining Choose currencie.
+    select#js-currencies
+        option EUR
+        option UAN
+        option AZN
+    p.wrapper__explaining Write value of your money.
+    input.wrapper__input#js-valueOfUsd(type="number", required)
+    p.wrapper__explaining.wrapper__explaining--answer#js-resOfCurrensy

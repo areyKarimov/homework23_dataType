@@ -1,0 +1,57 @@
+.nav {
+    width: 100%;
+    position: relative;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        border-radius: 50% 50% 0 0;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+        &.active {
+            z-index: 2;
+            opacity: 1;
+        }
+        & button {
+            width: 100%;
+            height: 100%;
+            color: #000;
+            font-weight: 700;
+            text-align: center;
+        }
+        &:nth-child(1) {
+            background-color: rgb(109, 179, 242);
+        }
+        &:nth-child(2) {
+            background-color: #FEEB6E;
+        }
+        &:nth-child(3) {
+            background-color: #C755AB;
+        }
+        &:nth-child(4) {
+            background-color: #E0848F;
+        }
+        &:nth-child(5) {
+            background-color: #F3654F;
+        }
+        &:nth-child(6) {
+            background-color: #FBB0E5;
+        }
+        &:nth-child(7) {
+            background-color: #CEE332;
+        }
+        &:nth-child(8) {
+            background-color: #C5D5DF;
+        }
+        &:nth-child(9) {
+            background-color: #B2DCED;
+        }
+        &:nth-child(10) {
+            background-color: #FEFCEA;
+        }
+    }
+}

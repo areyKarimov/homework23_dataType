@@ -1,0 +1,28 @@
+@import url(./normalize.css),
+'variables',
+'components';
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/bg.jpg) center / cover no-repeat;
+    height: 100vh;
+    font-family: 'Comic Neue', cursive;
+}
+
+.container {
+    display: flex;
+    opacity: 0;
+    padding-top: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+}

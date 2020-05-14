@@ -1,0 +1,28 @@
+extends layouts/main
+include mixins/tabs.pug
+block variables
+    - var pageTitle= 'Homework23'
+    - var liContent= [{name: "Task1"}, {name: "Task2"},{name: "Task3"},{name: "Task4"}, {name: "Task5"},{name: "Task6"},{name: "Task7"},{name: "Task8"}, {name: "Task9"}, {name: "Task10"}]
+    - var curPage= "Task1"
+block content
+    nav.nav
+        ul.nav__list
+            for i in liContent
+                if(i.name === curPage)
+                    +navLi(i.name, true)
+                else
+                    +navLi(i.name) 
+    section.wrapper                        
+        include  modules/task1.pug
+        include  modules/task2.pug
+        include  modules/task3.pug
+        include  modules/task4.pug
+        include  modules/task5.pug
+        include  modules/task6.pug
+        include  modules/task7.pug
+        include  modules/task8.pug
+        include  modules/task9.pug
+        include  modules/task10.pug
+    
+    script(src="js/main.js")
+        
